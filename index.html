@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JazzCash Secure Portal</title>
+    <meta
+      name="description"
+      content="JazzCash L0 to L1 secure access portal with biometric authentication"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">J</div>
+          <div>
+            <p class="brand-title">JazzCash</p>
+            <p class="brand-subtitle">Secure Access Portal</p>
+          </div>
+        </div>
+
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#security">Security</a>
+          <a href="#activity">Activity</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <button class="ghost-btn">Admin Panel</button>
+      </header>
+
+      <main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <span class="eyebrow">Trusted digital payments</span>
+            <h1>Biometric-first security for L0 to L1 service access.</h1>
+            <p>
+              Secure identity verification, role-based access control, and instant payment
+              workflows designed for trusted customer operations.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-btn" id="openLogin">Access Portal</button>
+              <button class="secondary-btn">View Demo</button>
+            </div>
+
+            <div class="mini-stats">
+              <div>
+                <strong>2.4M+</strong>
+                <span>Secure logs</span>
+              </div>
+              <div>
+                <strong>99.98%</strong>
+                <span>Uptime</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-panel" id="security">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Secure access</p>
+                <h2>Member Login</h2>
+              </div>
+              <div class="status-dot">Live</div>
+            </div>
+
+            <div class="role-select" aria-label="Access level selector">
+              <button class="role-btn active" data-role="L0">L0</button>
+              <button class="role-btn" data-role="L1">L1</button>
+            </div>
+
+            <form id="loginForm">
+              <label>
+                <span>Employee ID</span>
+                <input type="text" value="JC-2048" aria-label="Employee ID" />
+              </label>
+
+              <label>
+                <span>Secure PIN</span>
+                <input type="password" value="••••••" aria-label="Secure PIN" />
+              </label>
+
+              <div class="biometric-box">
+                <div class="fingerprint-icon" aria-hidden="true">
+                  <span></span>
+                </div>
+                <div class="biometric-copy">
+                  <strong>Biometric verification</strong>
+                  <p id="biometricStatus">Awaiting fingerprint scan</p>
+                </div>
+                <button type="button" class="scan-btn" id="scanButton">Scan</button>
+              </div>
+
+              <div class="meta-row">
+                <label class="checkbox-wrap">
+                  <input type="checkbox" checked />
+                  <span>Remember device</span>
+                </label>
+                <a href="#support">Need help?</a>
+              </div>
+
+              <button type="submit" class="primary-btn full-width">Verify Access</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="feature-strip">
+          <div class="feature-card">
+            <span class="icon">💳</span>
+            <div>
+              <h3>Smart Payments</h3>
+              <p>Wallet, transfer, bill pay, QR.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">🛡️</span>
+            <div>
+              <h3>Role Security</h3>
+              <p>L0 to L1 approved workflows.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">📊</span>
+            <div>
+              <h3>Real-Time Insights</h3>
+              <p>Live approvals and transactions.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard" id="activity">
+          <div class="panel summary-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-label">Operations summary</p>
+                <h3>Access activity</h3>
+              </div>
+              <span class="pill success">Secure</span>
+            </div>
+
+            <div class="metrics-grid">
+              <div class="metric-box">
+                <span>Total approvals</span>
+                <strong>4,892</strong>
+                <small>+12.4% vs last week</small>
+              </div>
+              <div class="metric-box">
+                <span>Biometric success</span>
+                <strong>98.7%</strong>
+                <small>Healthy</small>
+              </div>
+              <div class="metric-box">
+                <span>P2P transfers</span>
+                <strong>1,264</strong>
+                <small>4.3k today</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel operations-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-label">Quick actions</p>
+                <h3>Service desk</h3>
+              </div>
+            </div>
+
+            <div class="quick-actions">
+              <button>Send Money</button>
+              <button>Bill Pay</button>
+              <button>Top-up</button>
+              <button>QR Scan</button>
+            </div>
+
+            <ul class="activity-list">
+              <li>
+                <span class="bullet green"></span>
+                <div>
+                  <strong>Biometric verified</strong>
+                  <small>Access granted for L1 manager</small>
+                </div>
+                <time>2 mins ago</time>
+              </li>
+              <li>
+                <span class="bullet amber"></span>
+                <div>
+                  <strong>Manual review queued</strong>
+                  <small>Large transfer threshold pending</small>
+                </div>
+                <time>11 mins ago</time>
+              </li>
+              <li>
+                <span class="bullet blue"></span>
+                <div>
+                  <strong>Wallet top-up approved</strong>
+                  <small>Auto settlement succeeded</small>
+                </div>
+                <time>32 mins ago</time>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="support">
+        <p>JazzCash Secure Portal</p>
+        <p>Biometric + role-based access protection</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
